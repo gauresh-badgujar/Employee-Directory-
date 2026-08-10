@@ -1,0 +1,73 @@
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.employee-form h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.3rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.field input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  color: var(--color-text);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: var(--color-surface);
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.form-actions button.primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.form-actions button.primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.form-actions button:not(.primary):hover {
+  background: var(--color-bg);
+}
